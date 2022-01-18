@@ -1,0 +1,9 @@
+Story or tragedy
+
+docker-compose.yml been a pain in the ass. Been around two month and Eacces denied problem did
+ not solved
+Today Rifaet Ullah vai helped me but after a long session i got that problem was not solved ju
+st avoided which i previously did so problem is still problem.
+
+After that i just deleted the empty /node_modules local file. and the problem is gone.
+It might be the empty /node_modules file contained a .cache file which we did not delete previously.
