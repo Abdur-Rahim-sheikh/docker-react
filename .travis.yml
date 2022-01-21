@@ -8,3 +8,18 @@ before_install:
 
 script:
   - docker run -e CI=true abir/docker-react npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "give the region"
+  app: "give the app name"
+  env: "give the env name"
+  bucket_name: "give the s3 bucket name"
+  bucket_path: "the app name"
+
+  on:
+    branch: main
+
+  access_key_id: $AWS_ACCESS_KEY(given name)
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY(given name)"
